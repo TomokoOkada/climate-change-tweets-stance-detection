@@ -1,0 +1,29 @@
+# Climate Change Stance Detection Pipeline — Dependencies
+# =========================================================
+#
+# IMPORTANT: Pin transformers and tokenizers to these exact versions.
+# Newer transformers releases (>=4.45) change the tokenizer chat-template
+# API in ways that break vinai/bertweet-base loading on Kaggle.
+# If you don't need BERTweet (it underperformed in our experiments),
+# you can upgrade to a newer transformers version.
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# Tested environment: Kaggle notebooks, Python 3.11, CUDA 12.x, T4 GPU
+
+# Deep learning core
+torch>=2.0.0
+transformers==4.44.2
+tokenizers==0.19.1
+datasets>=2.14.0
+accelerate>=0.24.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+tqdm>=4.65.0
+
+# Optional — for protobuf compatibility on Kaggle
+# protobuf==3.20.3

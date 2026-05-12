@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter / Kaggle notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Model outputs (large binary files — download from Kaggle output tab)
+*_fine_tuned_model/
+*_checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Data files (not included in repo — see README for training data format)
+*.csv
+*.tsv
+*.json
+!requirements*.json
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+wandb/
+runs/
